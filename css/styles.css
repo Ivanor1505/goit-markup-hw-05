@@ -166,13 +166,13 @@ body {
 
 
 .studio-page[href="./index.html"]::after {
+    position: absolute;
     content: "";
     display: block;
     width: 48px;
     height: 4px;
     border-radius: 2px;
     background-color: var(--primery-brand-color);
-    position: absolute;
     margin-top: 20px;
 }
 
@@ -474,13 +474,13 @@ body {
 }
 
 .portfolio-page[href="./portfolio.html"]::after {
+    position: absolute;
     content: "";
     display: block;
     width: 66px;
     height: 4px;
     border-radius: 2px;
     background-color: var(--primery-brand-color);
-    position: absolute;
     margin-top: 20px;
 }
 
@@ -569,17 +569,6 @@ body {
 }
 
 .overlay {
-    font-family: 'Roboto';
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--light-color);
-
-    padding-top: 40px;
-    padding-left: 32px;
-    padding-right: 32px;
-    background-color: var(--primery-brand-color);
-
     display: inline-block;
     position: absolute;
     top: 0;
@@ -589,6 +578,18 @@ body {
     overflow: auto;
     transform: translate(0, 100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    padding-top: 40px;
+    padding-left: 32px;
+    padding-right: 32px;
+    background-color: var(--primery-brand-color);
+
+    font-family: 'Roboto';
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--light-color);
+
 }
 
 .card-link:hover .overlay,
